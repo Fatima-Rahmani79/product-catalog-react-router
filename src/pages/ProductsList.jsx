@@ -1,20 +1,25 @@
-import { Link } from "react-router-dom"
-import products from "../data/data"
+import { useOutletContext } from "react-router-dom";
+import products from "../data/data";
+import ProductCard from "../components/ProductCard";
 
 export default function ProductsList() {
-    return (
-        <div>
-            {products.map(product => (
-                <div key={product.id}>
-                    <h3>{product.name}</h3>
-                    <p>Price: ${product.price}</p>
-                    <p>Category: {product.category}</p>
-                    <p>{product.description}</p>
-                    <img src={product.image} alt={product.name} width="150"/>
+  const { category } = useOutletContext();
 
-                    <Link to={`/products/${product.id}`}>View Details</Link>
-                </div>
-            ))}
-        </div>
-    )
+  const filteredProducts =
+    category === "All"
+      ? products
+      : products.filter(
+          (product) => product.category === category
+        );
+
+  return (
+    <div className="productList">
+      {filteredProducts.map((product) => (
+        <ProductCard
+          key={product.id}
+          product={product}
+        />
+      ))}
+    </div>
+  );
 }

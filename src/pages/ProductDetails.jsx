@@ -1,33 +1,38 @@
-import { useNavigate, useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom";
 import products from "../data/data";
 
-export default function ProductDetails () {
-    const { id } = useParams();
-    const navigate = useNavigate();
+export default function ProductDetails() {
+  const { id } = useParams();
+  const navigate = useNavigate();
 
-    const product = products.find(p => p.id === parseInt(id));
+  const product = products.find((p) => p.id === Number(id));
 
-    if (!product) {
-        return (
-            <div>
-                <h2>Product not found</h2>
-                <button onClick={() => navigate("/products")}>
-                    Back to Products
-                </button>
-            </div>
-        );
-    }
-
+  if (!product) {
     return (
-        <div>
-            <img src={product.image} alt={product.name} />
-            <h2>{product.name}</h2>
-            <p>Price: ${product.price}</p>
-            <p>{product.description}</p>
+      <div>
+        <h2>Product not found</h2>
+        <button onClick={() => navigate("/products")}>Back to Products</button>
+      </div>
+    );
+  }
 
-            <button onClick={() => navigate(-1)}>
-                Back to Products
-            </button>
-        </div>
-    )
+  return (
+    <div className="productDetails">
+      <img
+        className="p-d-image"
+        src={product.image}
+        alt={product.name}
+        width="150"
+      />
+      <div className="productDetails-info">
+        <h2>{product.name}</h2>
+        <p>Price: ${product.price}</p>
+        <p>{product.description}</p>
+
+        <button className="link" onClick={() => navigate(-1)}>
+          Back to Products
+        </button>
+      </div>
+    </div>
+  );
 }

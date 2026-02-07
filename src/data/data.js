@@ -1,3 +1,23 @@
+import img1 from "../assets/images/1.jpg" 
+import img2 from "../assets/images/2.jpg" 
+import img3 from "../assets/images/3.jpg" 
+import img4 from "../assets/images/4.jpg" 
+import img5 from "../assets/images/5.jpg" 
+import img6 from "../assets/images/6.jpg" 
+import img7 from "../assets/images/7.jpg" 
+import img8 from "../assets/images/8.jpg" 
+import img9 from "../assets/images/9.jpg" 
+import img10 from "../assets/images/10.jpg" 
+import img11 from "../assets/images/11.jpg" 
+import img12 from "../assets/images/12.jpg" 
+import img13 from "../assets/images/13.jpg" 
+import img14 from "../assets/images/14.jpg" 
+import img15 from "../assets/images/15.jpg" 
+import img16 from "../assets/images/16.jpg" 
+import img17 from "../assets/images/17.jpg" 
+import img18 from "../assets/images/18.jpg" 
+
+
 const products = [
    {
       id: 1,
@@ -5,7 +25,7 @@ const products = [
       price: 4,
       category: "Kids",
       description: "Soft and comfortable cotton socks for kids.",
-      image: "./assets/images/1.jpg"
+      image: img1
    },
    {
       id: 2,
@@ -13,7 +33,7 @@ const products = [
       price: 4,
       category: "Kids",
       description: "Soft and beautiful socks for kids.",
-      image: "./assets/images/2.jpg"
+      image: img2
    },
    {
       id: 3,
@@ -21,7 +41,7 @@ const products = [
       price: 6,
       category: "Kids",
       description: "Soft and beautiful socks for kids.",
-      image: "./assets/images/3.jpg"
+      image: img3
    },
    {
       id: 4,
@@ -29,7 +49,7 @@ const products = [
       price: 7,
       category: "Men",
       description: "Soft and beautiful cotton socks for men.",
-      image: "./assets/images/4.jpg"
+      image: img4
    },
    {
       id: 5,
@@ -37,7 +57,7 @@ const products = [
       price: 5,
       category: "Kids",
       description: "Soft and beautiful socks for kids.",
-      image: "./assets/images/5.jpg"
+      image: img5
    },
    {
       id: 6,
@@ -45,7 +65,7 @@ const products = [
       price: 5,
       category: "Women",
       description: "Soft and comfortable cotton socks for women.",
-      image: "./assets/images/6.jpg"
+      image: img6
    },
    {
       id: 7,
@@ -53,7 +73,7 @@ const products = [
       price: 4,
       category: "Kids",
       description: "Soft and beautiful socks for kids.",
-      image: "./assets/images/7.jpg"
+      image: img7
    },
    {
       id: 8,
@@ -61,7 +81,7 @@ const products = [
       price: 6,
       category: "Kids",
       description: "Warm and beautiful socks for kids.",
-      image: "./assets/images/8.jpg"
+      image: img8
    },
    {
       id: 9,
@@ -69,7 +89,7 @@ const products = [
       price: 4,
       category: "Women",
       description: "Soft and beautiful cotton socks for women.",
-      image: "./assets/images/9.jpg"
+      image: img9
    },
    {
       id: 10,
@@ -77,7 +97,7 @@ const products = [
       price: 10,
       category: "Men",
       description: "Soft cotton socks for men.",
-      image: "./assets/images/10.jpg"
+      image: img10
    },
    {
       id: 11,
@@ -85,7 +105,7 @@ const products = [
       price: 6,
       category: "Kids",
       description: "Warm and beautiful socks for kids.",
-      image: "./assets/images/11.jpg"
+      image: img11
    },
    {
       id: 12,
@@ -93,7 +113,7 @@ const products = [
       price: 10,
       category: "Men",
       description: "Soft cotton socks for men.",
-      image: "./assets/images/12.jpg"
+      image: img12
    },
    {
       id: 13,
@@ -101,7 +121,7 @@ const products = [
       price: 4,
       category: "Women",
       description: "Soft and beautiful cotton socks for women.",
-      image: "./assets/images/13.jpg"
+      image: img13
    },
    {
       id: 14,
@@ -109,7 +129,7 @@ const products = [
       price: 6,
       category: "Kids",
       description: "Warm and beautiful socks for kids.",
-      image: "./assets/images/14.jpg"
+      image: img14
    },
    {
       id: 15,
@@ -117,7 +137,7 @@ const products = [
       price: 8,
       category: "Women",
       description: "Soft and beautiful cotton socks for women.",
-      image: "./assets/images/15.jpg"
+      image: img15
    },
    {
       id: 16,
@@ -125,7 +145,7 @@ const products = [
       price: 8,
       category: "Men",
       description: "Soft cotton socks for men.",
-      image: "./assets/images/16.jpg"
+      image: img16
    },
    {
       id: 17,
@@ -133,7 +153,7 @@ const products = [
       price: 5,
       category: "Kids",
       description: "Warm and beautiful socks for kids.",
-      image: "./assets/images/17.jpg"
+      image: img17
    },
    {
       id: 18,
@@ -141,7 +161,7 @@ const products = [
       price: 9,
       category: "Men",
       description: "Soft cotton socks for men.",
-      image: "./assets/images/18.jpg"
+      image: img18
    }
 ];
 
