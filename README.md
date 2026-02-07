@@ -1,16 +1,63 @@
-# React + Vite
+# Product Catalog — React + React Router
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small single-page React application demonstrating a product catalog with client-side routing using React Router.
 
-Currently, two official plugins are available:
+## Features
+- List of products (catalog)
+- Product detail pages (dynamic routes)
+- Basic navigation (Home, Products, About, Cart)
+- Responsive layout
+- Client-side routing with React Router
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech stack
+- React
+- React Router
+- JavaScript (ES6+)
+- CSS (or your preferred styling solution)
 
-## React Compiler
+## Prerequisites
+- Node.js >= 14
+- npm or yarn
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Setup
+1. Clone the repo
+2. Install dependencies
+    - npm: `npm install`
+    - yarn: `yarn`
+3. Run the dev server
+    - npm: `npm start`
+    - yarn: `yarn start`
+4. Open http://localhost:3000
 
-## Expanding the ESLint configuration
+## Available scripts
+- `start` — start development server
+- `build` — create production build
+- `test` — run tests (if configured)
+- `lint` — run linters (if configured)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Routing overview (typical)
+- `/` — Home / Catalog
+- `/products` — Products list
+- `/products/:id` — Product detail
+- `/cart` — Shopping cart
+- `/about` — About page
+
+Adjust routes as implemented in src/ (check src/App.jsx or src/App.tsx).
+
+## Project structure (suggested)
+- src/
+  - components/
+  - pages/
+  - routes/
+  - assets/
+  - App.jsx / index.jsx
+
+## Contributing
+- Fork, create a feature branch, open a PR.
+- Keep commits focused and tests green (if present).
+
+## License
+MIT — replace or update as needed.
+
+## Notes
+Update this README to reflect any project-specific scripts, environment variables, or backend APIs used by the app.
