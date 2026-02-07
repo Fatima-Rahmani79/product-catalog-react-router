@@ -3,6 +3,9 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import { ProductsLayout } from './layout/ProductsLayout'
+import NotFound from './pages/NotFound'
+import ProductsList from './pages/ProductsList'
+import ProductDetails from './pages/ProductDetails'
 
 function App() {
 
@@ -17,6 +20,7 @@ function App() {
           <Route path=':id' element={<ProductDetails/>}/>
         </Route>
         
+        <Route path='*' element={<NotFound/>}/>
       </Routes>
     </>
   )
