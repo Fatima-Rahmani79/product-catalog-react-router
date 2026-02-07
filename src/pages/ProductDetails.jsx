@@ -9,9 +9,9 @@ export default function ProductDetails() {
 
   if (!product) {
     return (
-      <div>
+      <div className="p-notFound">
         <h2>Product not found</h2>
-        <button onClick={() => navigate("/products")}>Back to Products</button>
+        <button className="link" onClick={() => navigate("/products")}>Back to Products</button>
       </div>
     );
   }
@@ -28,6 +28,7 @@ export default function ProductDetails() {
         <h2>{product.name}</h2>
         <p>Price: ${product.price}</p>
         <p>{product.description}</p>
+        <button className="buy" onClick={()=> alert("Product add to cart successfuly!")}>Add to cart</button>
 
         <button className="link" onClick={() => navigate(-1)}>
           Back to Products

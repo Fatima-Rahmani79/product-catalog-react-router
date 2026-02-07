@@ -199,6 +199,42 @@ h2 {
     border-radius: 20px;
 }
 
+.buy {
+    display: block;
+    width: 100px;
+    height: 35px;
+    background-color: #1ab154;
+    color: #efddc7;
+    border: none;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.buy:hover {
+    background-color: #137d3c;
+    color: #fcf5ed;  
+}
+
+span {
+    color: red;
+}
+
+.notFound {
+    padding: 6rem;
+    font-size: 2rem;
+}
+
+.notFound .link {
+    margin-top: 2rem;
+}
+
+.p-notFound {
+    margin-top: 4rem;
+}
 /* =====================
    Tablet (<=1024px)
 ===================== */

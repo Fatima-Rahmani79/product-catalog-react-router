@@ -9,6 +9,7 @@ export default function ProductCard({ product }) {
             <h3>{product.name}</h3>
             <p>Price: ${product.price}</p>
             <p>Category: {product.category}</p>
+            <button className="buy" onClick={()=> alert("Product add to cart successfuly!")}>Add to cart</button>
         </div>
       
 
